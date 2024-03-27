@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <style>
+        /* Apply background color to the entire page */
+        body {
+            background-color: #c2c2c2; /* Grey background */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center content horizontally */
+            align-items: flex-start; /* Align content to the top */
+            height: 100vh; /* Set height to full viewport height */
+        }
+
+        /* Style for the button */
+        button {
+            padding: 10px 20px; /* Adjust padding */
+            font-size: 18px; /* Font size */
+            background-color: #DC143C; /* Red background color */
+            color: white; /* White text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Pointer cursor on hover */
+            margin-bottom: 20px; /* Add margin at the bottom for spacing */
+        }
+
+        /* Hover effect for the button */
+        button:hover {
+            background-color: #8B0000; /* Darker red on hover */
+        }
+
+        /* Style for the parent container */
+        .container {
+            display: flex; /* Use flexbox */
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+        }
+
+        /* Style for the paragraph container */
+        .paragraph-container-small {
+            width: 400px; /* Set width of the container */
+            height: 200px; /* Set height of the container */
+            background-color: white; /* White background color */
+            border-radius: 10px; /* Rounded edges */
+            padding: 20px; /* Add padding */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+            overflow: auto; /* Allow overflow with scrollbars */
+        }
+
+        .paragraph-container-large {
+            width: 400px; /* Set width of the container */
+            height: 240px; /* Set height of the container */
+            background-color: white; /* White background color */
+            border-radius: 10px; /* Rounded edges */
+            padding: 20px; /* Add padding */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+            overflow: auto; /* Allow overflow with scrollbars */
+        }
+
+        /* Style for the paragraph title */
+        .paragraph-title {
+            font-size: 24px; /* Larger font size */
+            color: #333; /* Text color */
+            text-align: center; /* Center-align text */
+            margin-bottom: 10px; /* Add margin at the bottom */
+        }
+
+        /* Style for the paragraph */
+        p {
+            font-size: 16px; /* Font size */
+            color: #333; /* Text color */
+            text-align: center; /* Center-align text */
+            word-wrap: break-word; /* Allow words to break and wrap onto next line */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="margin-top: 20px;"> <!-- Add margin-top to move the button down -->
+            <form action="/video" method="post">
+                <button type="submit">Video</button>
+            </form>
+        </div>
+
+        <!-- Paragraph container -->
+        <div class="paragraph-container-small" style="margin-top: 20px;">
+            <!-- Title -->
+            <h2 class="paragraph-title">OUR MISSION</h2>
+            <!-- Paragraph -->
+            <p>The goal of this project is to offer the Queen's Hyperloop Design Team with machine-learning integrated camera system, capable of detecting and localizing potential obstructions in the pod's path</p>
+            
+        </div>
+        <div class="paragraph-container-large" style="margin-top: 40px;">
+            <!-- Title -->
+            <h2 class="paragraph-title">THE TEAM</h2>
+            <!-- Paragraph -->
+            <p>We are a group of aspiring engineers interested in machine learning and the future transportation. From a diverse mix of engineering specialities, ranging from Mechanical Engineering to Applied Mathematics, our unique combination of skills alongside the team's fostered culture of creativity and innovation has allowed us to successfully complete the project.</p>
+        </div>
+    </div>
+</body>
+</html>
